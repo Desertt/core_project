@@ -1,0 +1,47 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DERS 4</title>
+</head>
+<body>
+    <div style="background-color:red">
+        @DateTime.Now.ToShortDateString()     @*işareti ile başlayanlar için Sonuna noktalı virgül ifadesi almaz.*@
+    </div>
+    <br />
+    <div style="background-color:aqua">
+
+        @for(int i=1; i <= 10; i++)
+        {
+            @i
+            <br />
+        }
+
+    </div>
+    <br />
+    <br />
+    <div style="background-color:greenyellow">
+
+        @{
+            var liste = new List<string>() { "Ankara", "Çorum", "Bursa" };
+            var txt = "-";
+
+        }
+
+        @foreach (var item in liste)
+        {
+
+            @*@counter  @li;*@
+            <span>@(liste.IndexOf(item) + 1) @txt  @item</span><br />   @*Liste elemanlarının başına index numarası eklendi.*@
+            <br />
+        }
+
+    </div>
+</body>
+</html>
