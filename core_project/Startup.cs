@@ -26,11 +26,11 @@ namespace core_project
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc(routes =>    //Sayfsa Yönlendirme
+            app.UseMvc(routes =>    //Sayfa Yönlendirme
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}");
+                    template: "{controller=Home}/{action=Index6}");
             });
 
             //app.Run(async (context) =>
