@@ -30,7 +30,7 @@ namespace core_project
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index6}");
+                    template: "{controller=Home}/{action=Index7}");
             });
 
             //app.Run(async (context) =>
