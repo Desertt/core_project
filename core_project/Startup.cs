@@ -26,6 +26,8 @@ namespace core_project
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();  /*Uygulama wwwroot içerisinde ki static dosyaları uygulama içerisinde kullansın*/
+
             app.UseMvc(routes =>    //Sayfa Yönlendirme
             {
                 routes.MapRoute(

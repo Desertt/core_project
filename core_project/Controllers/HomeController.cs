@@ -38,6 +38,7 @@ namespace core_project.Controllers
                 new Kitap(){ID=1,KitapAd="80 Günde DevriAlem",Yazar="Jules Verne" },
                 new Kitap(){ID=2,KitapAd="Bilinmeyen Bir Kitabın Mektubu",Yazar="Zweig" },
                 new Kitap(){ID=3,KitapAd="Bir Noel Hikayesi",Yazar="Charles Dickens" },
+                new Kitap(){ID=4,KitapAd="Şeker",Yazar="Vasconcelous" },
 
             };
             return View(ktp);
@@ -66,6 +67,12 @@ namespace core_project.Controllers
             return View();
         }
 
+
+
+
+        /*
+         Not:wwwroot klasörü bootsrap css gibi dosyaları ekleyebileceğimiz dosyadır.
+         */
 
     }
 }
